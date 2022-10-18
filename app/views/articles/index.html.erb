@@ -1,0 +1,11 @@
+<h1>WELCOME WIKINIMOUS!</h1>
+
+<%= @articles %>
+
+<ul list-style: none>
+  <% @articles.each do |articles| %>
+    <li><%= articles.title %></li>
+    <li><%= articles.content %></li>
+    <%# <li><%= link_to "show", task_path(task) %> %>
+  <% end %>
+</ul>
